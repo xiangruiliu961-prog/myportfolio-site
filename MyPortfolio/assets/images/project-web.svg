@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="webBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="380" rx="16" fill="url(#webBg)" />
+
+  <!-- Browser Window Top -->
+  <rect width="600" height="38" rx="16" fill="#1e293b" />
+  <rect y="24" width="600" height="14" fill="#1e293b" />
+  <circle cx="25" cy="19" r="5" fill="#ef4444" />
+  <circle cx="42" cy="19" r="5" fill="#f59e0b" />
+  <circle cx="59" cy="19" r="5" fill="#10b981" />
+  <!-- URL Bar -->
+  <rect x="90" y="8" width="420" height="22" rx="11" fill="#0f172a" />
+  <text x="300" y="23" fill="#64748b" font-family="'Courier New', monospace" font-size="11" text-anchor="middle">https://campus-hub.univ.edu</text>
+
+  <!-- Left Sidebar Navigation -->
+  <rect x="20" y="55" width="120" height="305" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <!-- Nav Items -->
+  <rect x="30" y="75" width="100" height="26" rx="6" fill="#2563eb" />
+  <text x="45" y="92" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Market / 마켓</text>
+  
+  <rect x="30" y="112" width="100" height="24" rx="6" fill="#334155" />
+  <text x="45" y="128" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Chat / 채팅</text>
+
+  <rect x="30" y="146" width="100" height="24" rx="6" fill="#334155" />
+  <text x="45" y="162" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Forum / 커뮤니티</text>
+
+  <rect x="30" y="180" width="100" height="24" rx="6" fill="#334155" />
+  <text x="45" y="196" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Profile / 마이페이지</text>
+
+  <!-- Main Marketplace Items Grid -->
+  <!-- Top Banner -->
+  <rect x="155" y="55" width="425" height="70" rx="10" fill="url(#blueCard)" />
+  <text x="175" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">Campus Book &amp; Device Trade / 캠퍼스 거래</text>
+  <text x="175" y="108" fill="#dbeafe" font-family="system-ui, sans-serif" font-size="11">Verified student-to-student marketplace / 학생 인증 플랫폼</text>
+
+  <!-- Product Card 1 -->
+  <rect x="155" y="140" width="130" height="135" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="165" y="150" width="110" height="60" rx="6" fill="#334155"/>
+  <circle cx="220" cy="180" r="18" fill="#3b82f6" opacity="0.6"/>
+  <text x="165" y="225" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Algorithms Textbook</text>
+  <text x="165" y="242" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">¥ 45 / ₩ 8,000</text>
+  <rect x="165" y="250" width="110" height="18" rx="4" fill="#2563eb" />
+  <text x="220" y="263" fill="#ffffff" font-family="system-ui, sans-serif" font-size="9" text-anchor="middle">Buy / 구매하기</text>
+
+  <!-- Product Card 2 -->
+  <rect x="300" y="140" width="130" height="135" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="310" y="150" width="110" height="60" rx="6" fill="#334155"/>
+  <rect x="345" y="165" width="40" height="30" rx="4" fill="#10b981" opacity="0.7"/>
+  <text x="310" y="225" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Mechanical Keyboard</text>
+  <text x="310" y="242" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">¥ 120 / ₩ 22,000</text>
+  <rect x="310" y="250" width="110" height="18" rx="4" fill="#2563eb" />
+  <text x="365" y="263" fill="#ffffff" font-family="system-ui, sans-serif" font-size="9" text-anchor="middle">Buy / 구매하기</text>
+
+  <!-- Product Card 3 -->
+  <rect x="445" y="140" width="135" height="135" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="455" y="150" width="115" height="60" rx="6" fill="#334155"/>
+  <polygon points="512,165 490,195 535,195" fill="#8b5cf6" opacity="0.7"/>
+  <text x="455" y="225" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Desk Lamp LED</text>
+  <text x="455" y="242" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">¥ 28 / ₩ 5,000</text>
+  <rect x="455" y="250" width="115" height="18" rx="4" fill="#2563eb" />
+  <text x="512" y="263" fill="#ffffff" font-family="system-ui, sans-serif" font-size="9" text-anchor="middle">Buy / 구매하기</text>
+
+  <!-- Bottom Interactive Stats Bar -->
+  <rect x="155" y="290" width="425" height="70" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="175" y="315" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">ACTIVE USERS / 활성 사용자</text>
+  <text x="175" y="342" fill="#22c55e" font-family="system-ui, sans-serif" font-size="20" font-weight="bold">4,820 온라인</text>
+  <text x="380" y="315" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">TOTAL DEALS / 총 성사 거래</text>
+  <text x="380" y="342" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="20" font-weight="bold">12,490 건</text>
+</svg>

@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>刘翔瑞 / 유상서 · 个人作品集 / 개인 포트폴리오</title>
+  <meta name="description" content="大学生个人作品展示网站 / 대학생 개인 포트폴리오 웹사이트 - Python, Unity, Machine Learning, Web Development">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/python.svg">
+</head>
+<body>
+
+  <!-- ==================== 顶部导航栏 / 상단 네비게이션 ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" aria-label="Home">
+        <span class="brand-avatar">LX</span>
+        <div class="brand-text">
+          <span class="brand-name">刘翔瑞 <span class="divider">/</span> 유상서</span>
+          <span class="brand-sub">作品集 / 포트폴리오</span>
+        </div>
+      </a>
+
+      <!-- 桌面端菜单 / 데스크톱 메뉴 -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">
+              <span class="link-zh">首页</span>
+              <span class="link-sep">/</span>
+              <span class="link-kr">홈</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">
+              <span class="link-zh">关于我</span>
+              <span class="link-sep">/</span>
+              <span class="link-kr">자기소개</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">
+              <span class="link-zh">我的技能</span>
+              <span class="link-sep">/</span>
+              <span class="link-kr">기술 스택</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">
+              <span class="link-zh">我的作品</span>
+              <span class="link-sep">/</span>
+              <span class="link-kr">나의 작품</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">
+              <span class="link-zh">联系方式</span>
+              <span class="link-sep">/</span>
+              <span class="link-kr">연락처</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 导航右侧按钮 / 네비게이션 우측 버튼 -->
+      <div class="nav-actions">
+        <button type="button" class="btn btn-outline btn-sm" id="navResumeBtn">
+          <span>简历预览</span>
+          <span class="btn-sep">/</span>
+          <span>이력서 보기</span>
+        </button>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== 首页区域 / 홈 섹션 ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">
+              <span>计算机专业在读大学生</span>
+              <span class="slash">/</span>
+              <span>컴퓨터공학 전공 대학생</span>
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-zh">代码构建未来，创意赋能技术</span>
+            <span class="title-kr">코드로 미래를 짓고, 창의로 기술을 혁신합니다</span>
+          </h1>
+
+          <p class="hero-desc">
+            <span class="desc-zh">你好！我是刘翔瑞。专注于 Python 数据分析、Unity 游戏研发与前沿机器学习，致力于用扎实的工程实践与极客精神创造精彩的交互体验与智能系统。</span>
+            <span class="desc-kr">안녕하세요! 유상서입니다. Python 데이터 분석, Unity 게임 개발, 최신 머신러닝 연구에 몰입하며, 우아한 코드와 열정으로 혁신적인 디지털 경험을 창조하고 있습니다.</span>
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              <span>浏览作品</span>
+              <span class="btn-sep">/</span>
+              <span>작품 둘러보기</span>
+            </a>
+            <button type="button" class="btn btn-outline" id="heroResumeBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span>个人简历</span>
+              <span class="btn-sep">/</span>
+              <span>이력서 확인</span>
+            </button>
+            <a href="#contact" class="btn btn-ghost">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>与我联系</span>
+              <span class="btn-sep">/</span>
+              <span>연락하기</span>
+            </a>
+          </div>
+
+          <!-- 核心能力与开发态度 / 핵심 역량 및 개발 태도 -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <div class="stat-num">扎实基础</div>
+              <div class="stat-label">
+                <span>理论与代码并重</span>
+                <span class="slash">/</span>
+                <span>이론 및 실습</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">多元实战</div>
+              <div class="stat-label">
+                <span>游戏·算法·Web</span>
+                <span class="slash">/</span>
+                <span>융합 개발 역량</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">规范整洁</div>
+              <div class="stat-label">
+                <span>注重工程可读性</span>
+                <span class="slash">/</span>
+                <span>클린 코드 지향</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">持续精进</div>
+              <div class="stat-label">
+                <span>自驱探索新技术</span>
+                <span class="slash">/</span>
+                <span>자기주도 학습</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="avatar-glow"></div>
+            <img src="assets/images/avatar.svg" alt="刘翔瑞头像 / 유상서 프로필" class="avatar-img" width="400" height="400">
+            <div class="avatar-tags">
+              <div class="float-tag tag-top">
+                <span class="tag-icon">🎮</span>
+                <span class="tag-text">
+                  <strong>Unity 3D / 2D</strong>
+                  <small>游戏交互 / 게임 인터랙션</small>
+                </span>
+              </div>
+              <div class="float-tag tag-mid">
+                <span class="tag-icon">⚡</span>
+                <span class="tag-text">
+                  <strong>Python &amp; ML</strong>
+                  <small>算法开发 / 머신러닝 알고리즘</small>
+                </span>
+              </div>
+              <div class="float-tag tag-bottom">
+                <span class="tag-icon">💻</span>
+                <span class="tag-text">
+                  <strong>Full Stack Web</strong>
+                  <small>现代前端 / 반응형 웹 개발</small>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 关于我 / 자기소개 ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <span>ABOUT ME</span>
+            <span class="slash">/</span>
+            <span>자기소개</span>
+          </span>
+          <h2 class="section-title">
+            <span>关于我</span>
+            <span class="slash">/</span>
+            <span>자기소개</span>
+          </h2>
+          <p class="section-subtitle">
+            <span>探索求知、热爱创造，在代码世界中持续成长的青年开发者</span>
+            <span class="sub-sep">|</span>
+            <span>배움과 도전을 즐기며 코드 속에서 끊임없이 성장하는 청년 개발자</span>
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- 个人简介卡片 / 프로필 카드 -->
+          <div class="about-card profile-bio-card">
+            <div class="card-icon-header">
+              <span class="icon-box">👨‍💻</span>
+              <div class="icon-title">
+                <h3>
+                  <span>个人简介</span>
+                  <span class="slash">/</span>
+                  <span>프로필 요약</span>
+                </h3>
+                <span class="card-tagline">Passion &amp; Philosophy / 개발 철학</span>
+              </div>
+            </div>
+            <div class="card-body-text">
+              <p>
+                <strong class="text-primary">【中文】</strong>
+                我目前是计算机科学与技术专业的大三本科生。我对软件工程、交互式游戏开发和人工智能技术怀有长久的热情。在学习过程中，我始终坚持“知行合一”，通过独立完成游戏作品、深度学习实验和全栈网站，将课堂理论转化为具有实际价值的技术产品。
+              </p>
+              <p>
+                <strong class="text-primary">【한국어】</strong>
+                현재 컴퓨터공학과 3학년에 재학 중입니다. 소프트웨어 엔지니어링, 인터랙티브 게임 개발 및 인공지능 기술에 깊은 열정을 쏟고 있습니다. "이론과 실천의 융합"을 신조로 삼아, 인디 게임 제작, 딥러닝 모델 실험, 풀스택 웹 프로젝트 등을 통해 배운 지식을 현실 가치로 구현하고 있습니다.
+              </p>
+            </div>
+            <div class="personal-highlights">
+              <div class="highlight-item">
+                <span class="hl-badge">🎯 目标 / 목표</span>
+                <span class="hl-desc">成为一名兼具工程底蕴与产品思维的优秀软件与游戏工程师 / 엔지니어링 역량과 제품 감각을 겸비한 개발자</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-badge">💡 理念 / 가치관</span>
+                <span class="hl-desc">优雅代码、模块化思维、用户体验至上 / 우아한 코드, 모듈형 설계, 사용자 경험 중심</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 学习经历卡片 / 학력 및 이력 -->
+          <div class="about-card education-card">
+            <div class="card-icon-header">
+              <span class="icon-box">🎓</span>
+              <div class="icon-title">
+                <h3>
+                  <span>学习经历</span>
+                  <span class="slash">/</span>
+                  <span>학력 및 성장 과정</span>
+                </h3>
+                <span class="card-tagline">Academic &amp; Milestones / 주요 여정</span>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-time">大学在读 / 대학교 재학</span>
+                  <h4 class="timeline-title">
+                    <span>计算机科学与技术 · 专业理论基础</span>
+                    <span class="slash">/</span>
+                    <span>컴퓨터공학과 전공 이론 이수</span>
+                  </h4>
+                  <p class="timeline-desc">
+                    系统修读数据结构、操作系统、计算机体系结构、数据库原理、面向对象程序设计等计算机专业核心课程，具备扎实的计算机底层思维与系统逻辑。
+                    <br>
+                    <small>자료구조, 운영체제, 컴퓨터 구조, 데이터베이스, 객체지향 프로그래밍 등 전공 필수 교과를 체계적으로 이수하며 탄탄한 CS 이론 기반을 다졌습니다.</small>
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-time">实践探索 / 실습 및 탐구</span>
+                  <h4 class="timeline-title">
+                    <span>跨领域实战与工程化训练</span>
+                    <span class="slash">/</span>
+                    <span>다각적 실무 프로젝트 개발</span>
+                  </h4>
+                  <p class="timeline-desc">
+                    自主钻研 Python 自动化数据处理、Unity 游戏研发与机器学习基础，通过课程综合大作业与个人实践项目，持续提升工程落地与架构能力。
+                    <br>
+                    <small>Python 데이터 처리, Unity 게임 제작, 머신러닝 기초를 주도적으로 학습하며 실전 프로젝트를 설계하고 완성했습니다.</small>
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-time">持续精进 / 지속적 성장</span>
+                  <h4 class="timeline-title">
+                    <span>规范编码与技术作品积累</span>
+                    <span class="slash">/</span>
+                    <span>코드 품질 향상 및 포트폴리오 구축</span>
+                  </h4>
+                  <p class="timeline-desc">
+                    坚持编写模块化、可复用的高质量代码，积极参与开源社区探索，持续迭代与维护个人技术作品，保持对新技术的敏锐与求知欲。
+                    <br>
+                    <small>모듈화된 클린 코드를 작성하고 오픈소스 스터디에 참여하며, 개인 프로젝트를 지속적으로 리팩토링하고 있습니다.</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 兴趣爱好卡片 / 취미 및 관심사 -->
+          <div class="about-card hobbies-card">
+            <div class="card-icon-header">
+              <span class="icon-box">🌟</span>
+              <div class="icon-title">
+                <h3>
+                  <span>兴趣爱好</span>
+                  <span class="slash">/</span>
+                  <span>취미 및 관심사</span>
+                </h3>
+                <span class="card-tagline">Life &amp; Inspiration / 삶의 영감</span>
+              </div>
+            </div>
+            <div class="hobbies-grid">
+              <div class="hobby-item">
+                <div class="hobby-icon">🎮</div>
+                <div class="hobby-text">
+                  <h4>
+                    <span>独立游戏开发</span>
+                    <span class="slash">/</span>
+                    <span>인디 게임 개발</span>
+                  </h4>
+                  <p>沉迷于机制解谜与关卡节奏设计，经常参与 48 小时 Game Jam 极限创作。 / 게임 메커니즘과 레벨 디자인을 연구하며 48시간 게임잼 참가를 즐깁니다.</p>
+                </div>
+              </div>
+
+              <div class="hobby-item">
+                <div class="hobby-icon">🤖</div>
+                <div class="hobby-text">
+                  <h4>
+                    <span>AI 与开源技术</span>
+                    <span class="slash">/</span>
+                    <span>AI 및 오픈소스</span>
+                  </h4>
+                  <p>热衷追踪前沿论文、测试 Hugging Face 新模型与 GitHub 极客开源项目。 / 최신 AI 논문 리딩, Hugging Face 모델 및 깃허브 오픈소스 실험이 취미입니다.</p>
+                </div>
+              </div>
+
+              <div class="hobby-item">
+                <div class="hobby-icon">🎵</div>
+                <div class="hobby-text">
+                  <h4>
+                    <span>合成器与声音设计</span>
+                    <span class="slash">/</span>
+                    <span>사운드 디자인 &amp; 음악</span>
+                  </h4>
+                  <p>喜欢研究电子音色调制与游戏打击感声效制作，为作品赋予生动声音反馈。 / 신디사이저 음색 모듈레이션 및 게임 타격 사운드 효과음 제작을 즐깁니다.</p>
+                </div>
+              </div>
+
+              <div class="hobby-item">
+                <div class="hobby-icon">📚</div>
+                <div class="hobby-text">
+                  <h4>
+                    <span>技术阅读与博客</span>
+                    <span class="slash">/</span>
+                    <span>기술 독서 및 블로그</span>
+                  </h4>
+                  <p>常年精读计算机系统经典著作，并坚持记录技术拆解与学习复盘日志。 / CS 명저 독서와 개발 트러블슈팅 과정을 블로그에 꾸준히 기록하고 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 我的技能 / 기술 스택 ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <span>TECH STACK</span>
+            <span class="slash">/</span>
+            <span>기술 스택</span>
+          </span>
+          <h2 class="section-title">
+            <span>我的技能</span>
+            <span class="slash">/</span>
+            <span>기술 스택</span>
+          </h2>
+          <p class="section-subtitle">
+            <span>熟练掌握核心编程语言与开发工具，具备全链路系统构建能力</span>
+            <span class="sub-sep">|</span>
+            <span>핵심 프로그래밍 언어와 개발 도구를 숙련하여 시스템 구축 역량을 보유하고 있습니다</span>
+          </p>
+        </div>
+
+        <!-- 技能分类筛选标签 / 카테고리 필터 -->
+        <div class="skills-filter" id="skillsFilter">
+          <button type="button" class="filter-btn active" data-filter="all">
+            <span>全部技能</span>
+            <span class="slash">/</span>
+            <span>전체</span>
+          </button>
+          <button type="button" class="filter-btn" data-filter="programming">
+            <span>编程语言</span>
+            <span class="slash">/</span>
+            <span>프로그래밍 언어</span>
+          </button>
+          <button type="button" class="filter-btn" data-filter="game">
+            <span>游戏引擎</span>
+            <span class="slash">/</span>
+            <span>게임 엔진</span>
+          </button>
+          <button type="button" class="filter-btn" data-filter="web">
+            <span>Web 前端</span>
+            <span class="slash">/</span>
+            <span>웹 프론트엔드</span>
+          </button>
+          <button type="button" class="filter-btn" data-filter="ai">
+            <span>机器学习与工具</span>
+            <span class="slash">/</span>
+            <span>머신러닝 &amp; 도구</span>
+          </button>
+        </div>
+
+        <!-- 技能卡片列表 / 기술 카드 그리드 -->
+        <div class="skills-grid" id="skillsGrid">
+
+          <!-- 1. Python -->
+          <div class="skill-card" data-category="programming ai">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/python.svg" alt="Python" class="skill-icon">
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Python</h3>
+                <span class="skill-badge">熟练运用 / 숙련</span>
+              </div>
+              <span class="skill-status-tag">常用技术 / 주력 기술</span>
+            </div>
+            <p class="skill-summary">
+              <span>精通语法特性、自动化脚本、Pandas 数据清洗与 Matplotlib/Seaborn 科学可视化。</span>
+              <br>
+              <small>파이썬 핵심 문법, 자동화 스크립트 작성, Pandas 데이터 가공 및 시각화 능숙.</small>
+            </p>
+            <div class="skill-tags">
+              <span class="tag">NumPy</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Automation</span>
+            </div>
+          </div>
+
+          <!-- 2. Unity -->
+          <div class="skill-card" data-category="game programming">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/unity.svg" alt="Unity" class="skill-icon">
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Unity (C#)</h3>
+                <span class="skill-badge">实战开发 / 상급</span>
+              </div>
+              <span class="skill-status-tag">核心引擎 / 핵심 엔진</span>
+            </div>
+            <p class="skill-summary">
+              <span>掌握 3D/2D 物理碰撞、Animator 状态机控制、Shader Graph 材质与 UGUI 交互架构。</span>
+              <br>
+              <small>Unity 2D/3D 물리 엔진, 애니메이션 스테이트 머신, 셰이더 그래프, UI 설계 숙련.</small>
+            </p>
+            <div class="skill-tags">
+              <span class="tag">C# Scripting</span>
+              <span class="tag">Physics 3D</span>
+              <span class="tag">Shader Graph</span>
+            </div>
+          </div>
+
+          <!-- 3. HTML5 -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/html5.svg" alt="HTML5" class="skill-icon">
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">HTML5</h3>
+                <span class="skill-badge">语义化标准 / 능숙</span>
+              </div>
+              <span class="skill-status-tag">Web 标准 / 웹 표준</span>
+            </div>
+            <p class="skill-summary">
+              <span>遵循 W3C 现代语义化规范、无障碍设计（a11y）、Canvas 绘制与多媒体 API。</span>
+              <br>
+              <small>시맨틱 웹 표준 준수, 웹 접근성(a11y), Canvas 2D 그래픽 및 반응형 마크업.</small>
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Semantic HTML</span>
+              <span class="tag">Canvas 2D</span>
+              <span class="tag">Web Standards</span>
+            </div>
+          </div>
+
+          <!-- 4. CSS3 -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/css3.svg" alt="CSS3" class="skill-icon">
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">CSS3</h3>
+                <span class="skill-badge">现代布局 / 능숙</span>
+              </div>
+              <span class="skill-status-tag">响应式设计 / 반응형</span>
+            </div>
+            <p class="skill-summary">
+              <span>熟练 Flexbox / Grid 双引擎响应式排版、CSS 变量、过渡动效与移动端适配。</span>
+              <br>
+              <small>Flexbox/Grid 반응형 그리드, CSS Variables, 부드러운 애니메이션 및 모바일 최적화.</small>
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Flexbox &amp; Grid</span>
+              <span class="tag">Animations</span>
+              <span class="tag">Responsive</span>
+            </div>
+          </div>
+
+          <!-- 5. JavaScript -->
+          <div class="skill-card" data-category="web programming">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/javascript.svg" alt="JavaScript" class="skill-icon">
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">JavaScript (ES6+)</h3>
+                <span class="skill-badge">熟练运用 / 숙련</span>
+              </div>
+              <span class="skill-status-tag">交互核心 / 인터랙션</span>
+            </div>
+            <p class="skill-summary">
+              <span>熟练运用 ES6+ 语法、Promise/Async 异步编程、模块化规范与高性能 DOM 操作。</span>
+              <br>
+              <small>ES6+ 모던 문법, 비동기 Promise/Async-Await, 모듈화 및 브라우저 DOM 제어 숙달.</small>
+            </p>
+            <div class="skill-tags">
+              <span class="tag">ES6+</span>
+              <span class="tag">Async / Fetch</span>
+              <span class="tag">DOM API</span>
+            </div>
+          </div>
+
+          <!-- 6. PyTorch & ML -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/pytorch.svg" alt="PyTorch" class="skill-icon">
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">PyTorch &amp; ML</h3>
+                <span class="skill-badge">深度学习 / 중상급</span>
+              </div>
+              <span class="skill-status-tag">算法实训 / 알고리즘</span>
+            </div>
+            <p class="skill-summary">
+              <span>熟悉 CNN/ResNet 视觉分类网络搭建、交叉验证、超参数微调与 OpenCV 图像预处理。</span>
+              <br>
+              <small>CNN, ResNet 모델 구축, 딥러닝 손실함수 최적화, OpenCV 컴퓨터 비전 파이프라인.</small>
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">CNN</span>
+              <span class="tag">OpenCV</span>
+            </div>
+          </div>
+
+          <!-- 7. Git & Version Control -->
+          <div class="skill-card" data-category="ai programming">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/github.svg" alt="Git &amp; GitHub" class="skill-icon">
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Git &amp; GitHub</h3>
+                <span class="skill-badge">协同开发 / 능숙</span>
+              </div>
+              <span class="skill-status-tag">协作版本库 / 버전 관리</span>
+            </div>
+            <p class="skill-summary">
+              <span>熟练 Git 分支模型（Feature Branch）、版本回滚、合并冲突解决与 GitHub CI/CD。</span>
+              <br>
+              <small>Git 브랜치 관리, 협업 워크플로우, 충돌 해결 및 GitHub 자동화 워크플로우 숙련.</small>
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Git CLI</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">Collaboration</span>
+            </div>
+          </div>
+
+          <!-- 8. SQL & Data Storage -->
+          <div class="skill-card" data-category="programming ai">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <span class="skill-text-icon">🗄️</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">SQL &amp; Database</h3>
+                <span class="skill-badge">数据库基础 / 중급</span>
+              </div>
+              <span class="skill-status-tag">数据存储 / DB 기초</span>
+            </div>
+            <p class="skill-summary">
+              <span>掌握 SQLite / MySQL 关系型模式设计、索引建立、复杂多表连接与聚合分析查询。</span>
+              <br>
+              <small>관계형 데이터베이스 스키마 설계, 인덱스 최적화 및 복합 조인 쿼리 작성 가능.</small>
+            </p>
+            <div class="skill-tags">
+              <span class="tag">SQLite</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Query Tuning</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 我的作品 / 나의 작품 ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <span>PORTFOLIO</span>
+            <span class="slash">/</span>
+            <span>나의 작품</span>
+          </span>
+          <h2 class="section-title">
+            <span>我的作品</span>
+            <span class="slash">/</span>
+            <span>나의 작품</span>
+          </h2>
+          <p class="section-subtitle">
+            <span>精选大学期间代表性项目：包含 Python 自动化编程、Unity 游戏项目与机器学习算法实战</span>
+            <span class="sub-sep">|</span>
+            <span>대학 재학 중 완성한 대표 프로젝트: Python 자동화, Unity 게임, 머신러닝 실전 연구</span>
+          </p>
+        </div>
+
+        <!-- 作品分类筛选 / 프로젝트 필터 탭 -->
+        <div class="projects-filter" id="projectsFilter">
+          <button type="button" class="filter-btn active" data-filter="all">
+            <span>全部作品</span>
+            <span class="slash">/</span>
+            <span>전체 작품 (6)</span>
+          </button>
+          <button type="button" class="filter-btn" data-filter="python">
+            <span>Python 编程</span>
+            <span class="slash">/</span>
+            <span>Python 프로그래밍</span>
+          </button>
+          <button type="button" class="filter-btn" data-filter="unity">
+            <span>Unity 游戏</span>
+            <span class="slash">/</span>
+            <span>Unity 게임</span>
+          </button>
+          <button type="button" class="filter-btn" data-filter="ml">
+            <span>机器学习</span>
+            <span class="slash">/</span>
+            <span>머신러닝</span>
+          </button>
+        </div>
+
+        <!-- 作品卡片网格 / 프로젝트 카드 그리드 -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- 项目 1: Python 数据分析与自动化系统 -->
+          <div class="project-card" data-category="python" data-project="1">
+            <div class="project-media">
+              <img src="assets/images/project-python.svg" alt="Python 数据分析系统 / 파이썬 데이터 분석 시스템" class="project-img">
+              <div class="project-category-badge">
+                <span>Python 编程</span>
+                <span class="slash">/</span>
+                <span>Python</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <span class="title-main">智能数据分析与自动化报告系统</span>
+                <span class="title-sub">지능형 데이터 분석 및 자동화 리포팅 시스템</span>
+              </h3>
+              <p class="project-desc">
+                <span>基于 Python + Pandas 构建的高性能数据处理流水线。支持百万级海量数据一键清洗、异常值检测、多维度聚合分析及交互式可视化报表自动化生成。</span>
+                <br>
+                <small>Python과 Pandas 기반 대용량 데이터 전처리 파이프라인. 백만 건 데이터 이상치 자동 탐지, 다차원 통계 분석 및 시각화 리포트 자동 생성 제공.</small>
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Python 3.11</span>
+                <span class="stack-tag">Pandas</span>
+                <span class="stack-tag">Matplotlib</span>
+                <span class="stack-tag">Streamlit</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm btn-view-detail" data-id="1">
+                  <span>查看详情</span>
+                  <span class="btn-sep">/</span>
+                  <span>상세정보</span>
+                </button>
+                <button type="button" class="btn btn-outline btn-sm btn-open-demo" data-id="1">
+                  <span>运行演示</span>
+                  <span class="btn-sep">/</span>
+                  <span>데모 실행</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 项目 2: Unity 3D 科幻动作冒险游戏 -->
+          <div class="project-card" data-category="unity" data-project="2">
+            <div class="project-media">
+              <img src="assets/images/project-unity.svg" alt="Unity 3D 科幻游戏 / Unity 3D SF 어드벤처" class="project-img">
+              <div class="project-category-badge">
+                <span>Unity 游戏</span>
+                <span class="slash">/</span>
+                <span>Unity 3D</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <span class="title-main">《星际迷途》3D 科幻太空冒险游戏</span>
+                <span class="title-sub">《아스트로 오디세이》 3D SF 액션 어드벤처</span>
+              </h3>
+              <p class="project-desc">
+                <span>运用 Unity 3D 与 C# 独立研发的第三人称太空漫游动作游戏。实现惯性重力模拟、雷达锁定追踪系统、自定义 Shader 星空护盾渲染与流畅连招打击手感。</span>
+                <br>
+                <small>Unity 3D와 C#으로 제작한 3인칭 SF 액션 어드벤처 게임. 무중력 비행 물리 구현, 레이더 타깃 록온 시스템 및 셰이더 실드 이펙트 탑재.</small>
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Unity 3D</span>
+                <span class="stack-tag">C# Scripting</span>
+                <span class="stack-tag">Shader Graph</span>
+                <span class="stack-tag">Cinemachine</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm btn-view-detail" data-id="2">
+                  <span>查看详情</span>
+                  <span class="btn-sep">/</span>
+                  <span>상세정보</span>
+                </button>
+                <button type="button" class="btn btn-outline btn-sm btn-open-demo" data-id="2">
+                  <span>试玩演示</span>
+                  <span class="btn-sep">/</span>
+                  <span>게임 플레이</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 项目 3: PyTorch 图像识别与风格迁移 -->
+          <div class="project-card" data-category="ml" data-project="3">
+            <div class="project-media">
+              <img src="assets/images/project-ml.svg" alt="PyTorch 深度学习 / 딥러닝 컴퓨터 비전" class="project-img">
+              <div class="project-category-badge">
+                <span>机器学习</span>
+                <span class="slash">/</span>
+                <span>머신러닝</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <span class="title-main">基于深度学习的图像特征识别系统</span>
+                <span class="title-sub">딥러닝 기반 이미지 스타일 변환 및 객체 탐지</span>
+              </h3>
+              <p class="project-desc">
+                <span>基于 PyTorch 框架构建多层卷积神经网络（CNN）与神经风格迁移模型。实现多类别图像特征提取、目标区域定位与低延迟推理验证。</span>
+                <br>
+                <small>PyTorch 기반 CNN 이미지 분류 및 신경망 스타일 전이 시스템. 다범주 이미지 특징 추출, 객체 위치 탐색 및 저지연 추론 파이프라인 구현.</small>
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">PyTorch</span>
+                <span class="stack-tag">ResNet-50</span>
+                <span class="stack-tag">OpenCV</span>
+                <span class="stack-tag">NumPy</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm btn-view-detail" data-id="3">
+                  <span>查看详情</span>
+                  <span class="btn-sep">/</span>
+                  <span>상세정보</span>
+                </button>
+                <button type="button" class="btn btn-outline btn-sm btn-open-demo" data-id="3">
+                  <span>在线体验</span>
+                  <span class="btn-sep">/</span>
+                  <span>인터랙티브 체험</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 项目 4: 高校二手物资与社交 Web 平台 -->
+          <div class="project-card" data-category="python" data-project="4">
+            <div class="project-media">
+              <img src="assets/images/project-web.svg" alt="高校二手交易平台 / 캠퍼스 거래 웹앱" class="project-img">
+              <div class="project-category-badge">
+                <span>Python / Web</span>
+                <span class="slash">/</span>
+                <span>웹 개발</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <span class="title-main">高校闲置物品流转与校园社交平台</span>
+                <span class="title-sub">캠퍼스 중고거래 및 학생 커뮤니티 플랫폼</span>
+              </h3>
+              <p class="project-desc">
+                <span>专为大学校园设计的轻量化综合 Web 平台。具备学生身份认证、即时物品发布、即时搜索与过滤、响应式卡片流及消息留言功能，界面优雅易用。</span>
+                <br>
+                <small>대학 캠퍼스 전용 반응형 웹 플랫폼. 학생 인증, 실시간 물품 등록, 스마트 검색/필터링, 반응형 UI 및 쪽지 소통 기능 지원.</small>
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">HTML5 / CSS3</span>
+                <span class="stack-tag">JavaScript ES6</span>
+                <span class="stack-tag">Python Flask</span>
+                <span class="stack-tag">SQLite</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm btn-view-detail" data-id="4">
+                  <span>查看详情</span>
+                  <span class="btn-sep">/</span>
+                  <span>상세정보</span>
+                </button>
+                <button type="button" class="btn btn-outline btn-sm btn-open-demo" data-id="4">
+                  <span>平台预览</span>
+                  <span class="btn-sep">/</span>
+                  <span>라이브 프리뷰</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 项目 5: Unity 2D 像素风地牢闯关游戏 -->
+          <div class="project-card" data-category="unity" data-project="5">
+            <div class="project-media">
+              <img src="assets/images/project-unity2d.svg" alt="Unity 2D 像素地牢 / Unity 2D 픽셀 던전" class="project-img">
+              <div class="project-category-badge">
+                <span>Unity 2D</span>
+                <span class="slash">/</span>
+                <span>Unity 2D</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <span class="title-main">2D 像素复古地牢肉鸽冒险游戏</span>
+                <span class="title-sub">2D 픽셀 로그라이크 던전 크롤러 게임</span>
+              </h3>
+              <p class="project-desc">
+                <span>采用 Unity 2D 引擎开发的横版动作闯关游戏。包含随机地牢生成算法、Tilemap 瓦片地图系统、手感扎实的跳跃挥剑打击判定与多样化敌人 AI 逻辑。</span>
+                <br>
+                <small>Unity 2D 기반 로그라이크 액션 게임. 절차적 던전 생성 알고리즘, 타일맵 환경, 정밀한 피격 판정 및 몬스터 AI 상태 머신 구현.</small>
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Unity 2D</span>
+                <span class="stack-tag">C#</span>
+                <span class="stack-tag">Tilemap API</span>
+                <span class="stack-tag">Pixel Art</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm btn-view-detail" data-id="5">
+                  <span>查看详情</span>
+                  <span class="btn-sep">/</span>
+                  <span>상세정보</span>
+                </button>
+                <button type="button" class="btn btn-outline btn-sm btn-open-demo" data-id="5">
+                  <span>网页试玩</span>
+                  <span class="btn-sep">/</span>
+                  <span>웹 플레이</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 项目 6: NLP 文本情感分析与问答系统 -->
+          <div class="project-card" data-category="ml" data-project="6">
+            <div class="project-media">
+              <img src="assets/images/project-nlp.svg" alt="NLP 文本分析 / 자연어 감정분석 엔진" class="project-img">
+              <div class="project-category-badge">
+                <span>自然语言处理</span>
+                <span class="slash">/</span>
+                <span>NLP / AI</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <span class="title-main">双语智能文本情感分析与问答引擎</span>
+                <span class="title-sub">중/한 다국어 텍스트 감정 분석 및 질의응답</span>
+              </h3>
+              <p class="project-desc">
+                <span>融合预训练 Transformer / BERT 模型的自然语言处理系统。实现中韩双语评论情感极性判别、关键词注意力热力图分析与交互式问答能力。</span>
+                <br>
+                <small>Transformer/BERT 기반 다국어 NLP 엔진. 중문/한문 텍스트 감정 분석, 키워드 어텐션 시각화 및 자동 질의응답 서비스 구현.</small>
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">BERT / PyTorch</span>
+                <span class="stack-tag">HuggingFace</span>
+                <span class="stack-tag">FastAPI</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm btn-view-detail" data-id="6">
+                  <span>查看详情</span>
+                  <span class="btn-sep">/</span>
+                  <span>상세정보</span>
+                </button>
+                <button type="button" class="btn btn-outline btn-sm btn-open-demo" data-id="6">
+                  <span>文本测试</span>
+                  <span class="btn-sep">/</span>
+                  <span>테스트 실행</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 联系方式 / 연락처 ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <span>GET IN TOUCH</span>
+            <span class="slash">/</span>
+            <span>연락처</span>
+          </span>
+          <h2 class="section-title">
+            <span>联系方式</span>
+            <span class="slash">/</span>
+            <span>연락처</span>
+          </h2>
+          <p class="section-subtitle">
+            <span>随时欢迎技术交流、项目合作或学术探讨，期待与您连接！</span>
+            <span class="sub-sep">|</span>
+            <span>기술 교류, 프로젝트 협업, 커피챗 등 언제든 편하게 연락해 주세요!</span>
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- 联系信息卡片 / 연락 정보 카드 -->
+          <div class="contact-info-card">
+            <div class="contact-card-header">
+              <h3 class="info-title">
+                <span>交流与社交媒体</span>
+                <span class="slash">/</span>
+                <span>연락처 및 소셜 미디어</span>
+              </h3>
+              <p class="info-sub">
+                <span>如果您对我的作品感兴趣，或有实习合作机会，请随时通过以下渠道与我取得联系。</span>
+                <br>
+                <small>제 포트폴리오에 관심이 있으시거나 협업/채용 제안이 있다면 언제든지 문의해 주세요.</small>
+              </p>
+            </div>
+
+            <div class="contact-methods">
+              <!-- 电子邮箱 -->
+              <div class="method-item">
+                <div class="method-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">
+                    <span>电子邮箱</span>
+                    <span class="slash">/</span>
+                    <span>이메일 주소</span>
+                  </span>
+                  <!-- 💡 提示：可以在此替换为您的常用邮箱 / 이 곳에 본인 이메일을 입력하세요 -->
+                  <span class="method-value" id="emailText">your_email@example.com</span>
+                </div>
+                <button type="button" class="btn btn-outline btn-xs" id="copyEmailBtn" aria-label="Copy Email">
+                  <span>复制邮箱</span>
+                  <span class="slash">/</span>
+                  <span>복사</span>
+                </button>
+              </div>
+
+              <!-- GitHub -->
+              <div class="method-item">
+                <div class="method-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">
+                    <span>GitHub 代码主页</span>
+                    <span class="slash">/</span>
+                    <span>깃허브 저장소</span>
+                  </span>
+                  <!-- 💡 提示：可以在此替换为您的 GitHub 主页 / 이 곳에 본인 깃허브 주소를 입력하세요 -->
+                  <span class="method-value">github.com/your-username</span>
+                </div>
+                <button type="button" class="btn btn-outline btn-xs" id="githubVisitBtn" aria-label="Visit GitHub">
+                  <span>访问主页</span>
+                  <span class="slash">/</span>
+                  <span>방문</span>
+                </button>
+              </div>
+
+              <!-- 院校与位置 -->
+              <div class="method-item">
+                <div class="method-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">
+                    <span>所在院校 &amp; 专业</span>
+                    <span class="slash">/</span>
+                    <span>학교 및 전공</span>
+                  </span>
+                  <!-- 💡 提示：可以在此替换为您的学校与专业 / 이 곳에 본인 학교와 전공을 입력하세요 -->
+                  <span class="method-value">[高校名称 / 대학교 이름] · 计算机科学与技术专业</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 简历下载卡片区 -->
+            <div class="resume-download-box">
+              <div class="resume-box-text">
+                <strong>
+                  <span>求职与学术简历</span>
+                  <span class="slash">/</span>
+                  <span>이력서 다운로드</span>
+                </strong>
+                <p>
+                  <span>中韩双语完整版个人简历，包含详细课程与项目经历。</span>
+                  <br>
+                  <small>국문/중문 상세 학력 및 프로젝트 기술 이력서.</small>
+                </p>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" id="boxResumeBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>下载简历 (PDF)</span>
+                <span class="btn-sep">/</span>
+                <span>다운로드</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 在线留言表单 / 온라인 메시지 폼 -->
+          <div class="contact-form-card">
+            <h3 class="form-title">
+              <span>在线发送留言</span>
+              <span class="slash">/</span>
+              <span>온라인 메시지 보내기</span>
+            </h3>
+            <p class="form-desc">
+              <span>填写下表直接向我发送信息，我会在 24 小时内查收并回复您的邮件！</span>
+              <br>
+              <small>아래 양식을 작성해 주시면 24시간 이내에 기재하신 이메일로 답변드리겠습니다.</small>
+            </p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <!-- 姓名 -->
+              <div class="form-group">
+                <label for="senderName" class="form-label">
+                  <span>您的姓名</span>
+                  <span class="slash">/</span>
+                  <span>성함</span>
+                  <span class="required">*</span>
+                </label>
+                <input type="text" id="senderName" name="senderName" class="form-control" placeholder="例如：张同学 / 예: 홍길동" required>
+                <div class="form-error" id="nameError">
+                  <span>请输入您的姓名</span> / <span>성함을 입력해 주세요</span>
+                </div>
+              </div>
+
+              <!-- 邮箱 -->
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">
+                  <span>您的电子邮箱</span>
+                  <span class="slash">/</span>
+                  <span>이메일 주소</span>
+                  <span class="required">*</span>
+                </label>
+                <input type="email" id="senderEmail" name="senderEmail" class="form-control" placeholder="yourname@domain.com" required>
+                <div class="form-error" id="emailError">
+                  <span>请输入有效的电子邮箱地址</span> / <span>올바른 이메일 주소를 입력해 주세요</span>
+                </div>
+              </div>
+
+              <!-- 主题 -->
+              <div class="form-group">
+                <label for="messageTopic" class="form-label">
+                  <span>交流主题</span>
+                  <span class="slash">/</span>
+                  <span>문의 유형</span>
+                  <span class="required">*</span>
+                </label>
+                <select id="messageTopic" name="messageTopic" class="form-control" required>
+                  <option value="" disabled selected>请选择主题 / 문의 유형을 선택하세요</option>
+                  <option value="tech">技术探讨与交流 / 기술 질의 및 학술 교류</option>
+                  <option value="project">项目开发合作 / 프로젝트 협업 제안</option>
+                  <option value="job">实习与工作机会 / 인턴 및 채용 제안</option>
+                  <option value="other">其他日常交流 / 기타 일반 문의</option>
+                </select>
+                <div class="form-error" id="topicError">
+                  <span>请选择交流主题</span> / <span>문의 유형을 선택해 주세요</span>
+                </div>
+              </div>
+
+              <!-- 留言内容 -->
+              <div class="form-group">
+                <label for="messageContent" class="form-label">
+                  <span>详细留言内容</span>
+                  <span class="slash">/</span>
+                  <span>메시지 내용</span>
+                  <span class="required">*</span>
+                </label>
+                <textarea id="messageContent" name="messageContent" rows="5" class="form-control" placeholder="请输入您的留言、合作想法或联系建议... / 구체적인 문의 내용 또는 프로젝트 제안을 적어주세요..." required></textarea>
+                <div class="form-error" id="contentError">
+                  <span>留言内容不能为空（不少于 5 个字）</span> / <span>메시지 내용을 5자 이상 입력해 주세요</span>
+                </div>
+              </div>
+
+              <!-- 提交按钮 -->
+              <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>立即发送留言</span>
+                <span class="btn-sep">/</span>
+                <span>메시지 발송</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 页脚 / 푸터 ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-avatar-sm">LX</span>
+          <div>
+            <h4 class="footer-name">刘翔瑞 / 유상서</h4>
+            <p class="footer-title">大学生个人作品展示 / 대학생 개인 포트폴리오</p>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <a href="#home">首页 / 홈</a>
+          <a href="#about">关于我 / 자기소개</a>
+          <a href="#skills">我的技能 / 기술 스택</a>
+          <a href="#projects">我的作品 / 나의 작품</a>
+          <a href="#contact">联系方式 / 연락처</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          <span>&copy; 2026 刘翔瑞 (유상서). 保留所有权利。 / All Rights Reserved.</span>
+        </p>
+        <p class="tech-credit">
+          <span>精心构建于 HTML5 · CSS3 · Modern JavaScript</span>
+          <span class="slash">/</span>
+          <span>모던 웹 기술로 제작되었습니다</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== 回到顶部按钮 / 맨 위로 이동 ==================== -->
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- ==================== 作品详情弹窗 / 프로젝트 상세 모달 ==================== -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag" id="modalTag">Python 编程 / Python</span>
+          <h3 class="modal-title" id="modalTitle">项目标题 / 프로젝트 제목</h3>
+        </div>
+        <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- 动态由 JS 填充 / JS 동적 주입 -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline btn-sm" id="modalCloseBtnFooter">
+          <span>关闭窗口</span>
+          <span class="btn-sep">/</span>
+          <span>닫기</span>
+        </button>
+        <button type="button" class="btn btn-primary btn-sm" id="modalDemoBtn">
+          <span>打开即时演示</span>
+          <span class="btn-sep">/</span>
+          <span>라이브 데모</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 在线交互演示弹窗 / 인터랙티브 데모 모달 ==================== -->
+  <div class="modal-backdrop" id="demoModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-lg">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">LIVE DEMO / 인터랙티브 체험</span>
+          <h3 class="modal-title" id="demoModalTitle">项目交互演练 / 프로젝트 인터랙티브 데모</h3>
+        </div>
+        <button type="button" class="modal-close" id="demoModalCloseBtn" aria-label="Close demo modal">&times;</button>
+      </div>
+      <div class="modal-body" id="demoModalBody">
+        <!-- 动态嵌入即时演示组件（Canvas游戏、数据筛选器、AI情绪测试） -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline btn-sm" id="demoModalCloseFooter">
+          <span>返回作品列表</span>
+          <span class="btn-sep">/</span>
+          <span>목록으로 돌아가기</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 个人简历弹窗 / 이력서 모달 ==================== -->
+  <div class="modal-backdrop" id="resumeModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-lg">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">CURRICULUM VITAE / 이력서</span>
+          <h3 class="modal-title">
+            <span>刘翔瑞 · 中韩双语简历</span>
+            <span class="slash">/</span>
+            <span>유상서 포트폴리오 이력서</span>
+          </h3>
+        </div>
+        <button type="button" class="modal-close" id="resumeModalCloseBtn" aria-label="Close resume modal">&times;</button>
+      </div>
+      <div class="modal-body resume-body">
+        <div class="resume-sheet">
+          <div class="resume-header">
+            <div>
+              <h2 class="resume-name">刘翔瑞 / 유상서 (Xiangrui Liu)</h2>
+              <p class="resume-role">计算机科学与技术本科生 · 软件与游戏研发 / 컴퓨터공학 학사 · 소프트웨어 및 게임 개발</p>
+              <!-- 💡 提示：可在此修改您的简历联系信息 / 이력서 연락처 정보를 변경하세요 -->
+              <p class="resume-contact">📧 your_email@example.com | 🌐 github.com/your-username | 📱 (+86) 1XX-XXXX-XXXX</p>
+            </div>
+            <div class="resume-badge-box">
+              <span>在读求职</span>
+              <span class="slash">/</span>
+              <span>인턴 구직중</span>
+            </div>
+          </div>
+
+          <hr class="resume-hr">
+
+          <div class="resume-section">
+            <h4 class="resume-sec-title">🎓 教育背景 / 학력 사항</h4>
+            <div class="resume-row">
+              <div class="resume-row-head">
+                <!-- 💡 提示：可在此替换为您的具体高校名称 / 대학명을 입력하세요 -->
+                <strong>[高校名称 / 대학교 이름] · 计算机科学与技术学院 / 컴퓨터공학부</strong>
+                <span>大学在读 / 재학 (2023 - 2027)</span>
+              </div>
+              <p>工学学士在读。主修课程：数据结构、操作系统、计算机算法、数据库原理、计算机网络、软件工程等专业核心课程。</p>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4 class="resume-sec-title">🛠️ 技术栈清单 / 기술 스택 요약</h4>
+            <ul class="resume-list">
+              <li><strong>编程语言 / 언어:</strong> Python, C#, JavaScript (ES6+), HTML5, CSS3, SQL, C/C++</li>
+              <li><strong>引擎与框架 / 프레임워크:</strong> Unity 3D/2D, PyTorch, Pandas, NumPy, OpenCV, Flask, FastAPI</li>
+              <li><strong>开发工具 / 도구:</strong> Git, GitHub, VS Code, Visual Studio, Blender, Linux CLI</li>
+            </ul>
+          </div>
+
+          <div class="resume-section">
+            <h4 class="resume-sec-title">💼 核心项目经历 / 주요 프로젝트 경험</h4>
+            <div class="resume-project-item">
+              <div class="resume-row-head">
+                <strong>《星际迷途》3D 科幻动作游戏 / 《아스트로 오디세이》 Unity 3D 게임</strong>
+                <span>独立开发者 / 단독 개발</span>
+              </div>
+              <p>利用 Unity 3D 研发，编写 C# 移动与相机控制算法、编写 Shader Graph 特效、搭建关卡状态机，实现沉浸式太空巡航与动作交互体验。</p>
+            </div>
+            <div class="resume-project-item">
+              <div class="resume-row-head">
+                <strong>基于深度学习的视觉分类系统 / 딥러닝 기반 비전 분류 모델</strong>
+                <span>项目开发者 / 프로젝트 개발</span>
+              </div>
+              <p>使用 PyTorch 搭建卷积神经网络模型，进行图像预处理与模型推理，并部署于网页端实现即时测试体验。</p>
+            </div>
+            <div class="resume-project-item">
+              <div class="resume-row-head">
+                <strong>智能数据处理与自动化报表分析流水线 / 파이썬 데이터 자동화 분석기</strong>
+                <span>主开发者 / 리드 개발자</span>
+              </div>
+              <p>使用 Python 和 Pandas 编写自动化数据导入、清洗过滤与多图表可视化生成，实现高效的数据批处理与报表导出。</p>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4 class="resume-sec-title">🌟 实践经历与综合素养 / 학업 및 프로젝트 활동</h4>
+            <ul class="resume-list">
+              <li>系统完成多门专业核心课程大作业与综合设计，代码结构规范整洁 / 전공 필수 프로젝트 다수 수행 및 모듈형 클린 코드 지향</li>
+              <li>积极钻研开源技术社区，持续维护并迭代个人独立开发项目仓库 / 깃허브 오픈소스 스터디 및 개인 프로젝트 지속 리팩토링</li>
+              <li>坚持记录技术博客与学习复盘心得，具备良好的自驱动力与问题拆解分析能力 / 기술 블로그 운영 및 지속적인 자기주도 학습 습관 보유</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline btn-sm" id="resumeModalCloseFooter">
+          <span>关闭</span>
+          <span class="btn-sep">/</span>
+          <span>닫기</span>
+        </button>
+        <button type="button" class="btn btn-primary btn-sm" id="printResumeBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          <span>打印 / 保存为 PDF</span>
+          <span class="btn-sep">/</span>
+          <span>PDF 인쇄 및 저장</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 浮动提示通知 / 토스트 알림 ==================== -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
