@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="spaceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816" />
+      <stop offset="50%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <radialGradient id="planetGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#0284c7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shipMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+    <linearGradient id="thrusterBeam" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Space Backdrop -->
+  <rect width="600" height="380" rx="16" fill="url(#spaceGrad)" />
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.6">
+    <circle cx="50" cy="80" r="1.5" />
+    <circle cx="120" cy="40" r="1" />
+    <circle cx="200" cy="110" r="2" />
+    <circle cx="340" cy="60" r="1" />
+    <circle cx="480" cy="90" r="1.5" />
+    <circle cx="550" cy="45" r="2" />
+    <circle cx="90" cy="200" r="1" />
+    <circle cx="280" cy="180" r="1.5" />
+    <circle cx="520" cy="210" r="1" />
+  </g>
+
+  <!-- Distant Glowing Exoplanet with Rings -->
+  <ellipse cx="440" cy="120" r="90" fill="url(#planetGlow)" />
+  <circle cx="440" cy="120" r="45" fill="#4338ca" />
+  <circle cx="440" cy="120" r="45" fill="none" stroke="#6366f1" stroke-width="2" />
+  <!-- Planetary Ring -->
+  <ellipse cx="440" cy="120" rx="90" ry="24" fill="none" stroke="#818cf8" stroke-width="4" transform="rotate(-20 440 120)" opacity="0.7"/>
+
+  <!-- Low-poly Sci-Fi Ground Grid / Cyber Terrain -->
+  <g stroke="#3b82f6" stroke-width="1.2" opacity="0.35">
+    <line x1="0" y1="380" x2="600" y2="380" />
+    <line x1="0" y1="350" x2="600" y2="350" />
+    <line x1="0" y1="325" x2="600" y2="325" />
+    <line x1="0" y1="305" x2="600" y2="305" />
+    <line x1="0" y1="290" x2="600" y2="290" />
+    <!-- Perspective radial lines converging to center -->
+    <line x1="300" y1="270" x2="-50" y2="380" />
+    <line x1="300" y1="270" x2="100" y2="380" />
+    <line x1="300" y1="270" x2="250" y2="380" />
+    <line x1="300" y1="270" x2="350" y2="380" />
+    <line x1="300" y1="270" x2="500" y2="380" />
+    <line x1="300" y1="270" x2="650" y2="380" />
+  </g>
+
+  <!-- Low-poly Asteroids -->
+  <polygon points="90,160 120,140 150,170 130,200 85,185" fill="#334155" stroke="#475569" stroke-width="2"/>
+  <polygon points="90,160 120,170 85,185" fill="#1e293b"/>
+  <polygon points="120,140 150,170 120,170" fill="#475569"/>
+
+  <!-- Spaceship Hero Craft (Unity 3D Asset) -->
+  <g transform="translate(180, 140)">
+    <!-- Thruster fire glow -->
+    <polygon points="15,60 -60,60 -10,50" fill="url(#thrusterBeam)" />
+    <polygon points="15,80 -60,80 -10,90" fill="url(#thrusterBeam)" />
+
+    <!-- Main Hull -->
+    <polygon points="20,70 120,40 220,70 120,100" fill="url(#shipMetal)" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Top Cockpit Glass -->
+    <polygon points="110,65 170,70 130,76 90,70" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+    <!-- Wings Upper -->
+    <polygon points="60,50 30,10 110,40" fill="#475569" stroke="#64748b" stroke-width="1"/>
+    <!-- Wings Lower -->
+    <polygon points="60,90 30,130 110,100" fill="#334155" stroke="#475569" stroke-width="1"/>
+    <!-- Wingtip Lights -->
+    <circle cx="30" cy="10" r="3" fill="#38bdf8" />
+    <circle cx="30" cy="130" r="3" fill="#f43f5e" />
+  </g>
+
+  <!-- HUD Overlay Elements -->
+  <g font-family="'Courier New', monospace" fill="#38bdf8">
+    <rect x="25" y="25" width="135" height="42" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="#0284c7" stroke-width="1"/>
+    <text x="35" y="42" font-size="11">FPS: 120</text>
+    <text x="35" y="58" font-size="11">ENGINE: UNITY 3D</text>
+
+    <!-- Target Reticle -->
+    <circle cx="440" cy="120" r="28" fill="none" stroke="#f43f5e" stroke-width="1.5" stroke-dasharray="8 6" />
+    <line x1="440" y1="85" x2="440" y2="100" stroke="#f43f5e" stroke-width="1.5" />
+    <line x1="440" y1="140" x2="440" y2="155" stroke="#f43f5e" stroke-width="1.5" />
+    <line x1="405" y1="120" x2="420" y2="120" stroke="#f43f5e" stroke-width="1.5" />
+    <line x1="460" y1="120" x2="475" y2="120" stroke="#f43f5e" stroke-width="1.5" />
+    <text x="440" y="165" font-size="10" fill="#f43f5e" text-anchor="middle">LOCKED [TARGET_01]</text>
+  </g>
+</svg>
